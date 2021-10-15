@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Insert description of HTML page here</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet"
+        href="css/style.css"
+        type ="text/css"/>
+    </head>
+    <body>
+        <div id ="navbar"><!--Leave empty--></div>
+        <!--Write your code here-->
+        <form>
+            <!--<legend>Personal Information</legend>-->
+            <label>Name</label><br>
+            <input type="text" placeholder="Your name" pattern="([a-zA-Z\s]){1,}" required/><br>
+            <!--pattern is to set alphabetical and space as the only valid inputs-->
+            
+            <label>Phone number</label>
+            <label>Email</label><br>
+            <!--input fields for teleNo. and Email goes under the labels-->
+            <input type="tel" placeholder="E.g. 40107608" pattern="([0-9]){8}" required/>
+            <input type="email" placeholder="E.g. hello@gmail.com" required/> <br>
+            
+            <label>Select treatment</label><br>
+            <select id ="treatment" required>
+                <option disabled selected value=""> -- Select an option -- </option>
+                <option value ="Neck">Neck</option>
+                <option value="Back">Back</option>
+                <option value ="Upper Body">Upper Body</option>
+                <option value="Lower Body">Lower Body</option>
+                <option value ="Full Massage">Full Massage</option>
+            </select><br>
+
+            <label>Select date</label>
+            <label>Select time: Start - End</label><br>
+            <!--input form on new line-->
+            <input type="date" required >
+            <input type="time" required min="10:00" max="16:15"> 
+            <!--The parlor opens 10am and each session lasts 45min-->
+            <input type="time" required min="10:45" max="17:00"><br>
+            <!--The parlor closes 17pm-->
+            <input type="submit" value="Confirm">
+        </form>
+
+        
+        <div id ="footer"><!--Leave empty--></div>
+    </body>
+
+</html>
