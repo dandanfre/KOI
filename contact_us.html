@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Insert description of HTML page here</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet"
+        href="css/style.css"
+        type ="text/css"/>
+    </head>
+    <body>
+        <div id ="navbar"><!--Leave empty--></div>
+
+        <form>
+
+          <label> Name </label><br>
+          <input type="text" name="name" required/>
+
+          <br>
+
+          <label> Phone number </label><br>
+          <input type="tel" name="phone_number" pattern="[0-9]{8}" required/>
+
+          <br>
+
+          <label> Email </label><br>
+          <input type="email" name="email" required/>
+
+          <br>
+
+          <label> Subject </label><br>
+          <select name="subject" required>
+            <option disabled selected value> -- Select an option -- </option>
+            <option value="cooperation">Cooperation</option>
+            <option value="press">Press</option>
+            <option value="discount">Discount</option>
+            <option value="deals">Deals</option>
+            <option value="other">Other</option>
+          </select>
+
+          <br>
+
+          <label> Message </label><br>
+          <textarea name="message" required></textarea>
+
+          <br>
+
+          <input type="submit" value="Send">
+
+        </form>
+
+        <div id ="footer"><!--Leave empty--></div>
+    </body>
+
+</html>
