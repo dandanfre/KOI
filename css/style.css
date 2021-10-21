@@ -1,10 +1,11 @@
 body{
     font-family: degular,Verdana, sans-serif;
     font-style: normal;
-    font-size: 24;
+    font-size: 24px;
     font-weight: 300;
-    margin-left: 15%;
+    /*margin-left: 15%;*/
     background-color: #222222;
+    color: white
 }
 
 h1{
@@ -23,16 +24,47 @@ h2{
     font-weight: 400;
 
 }
-
-
+h3{
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 24;
+    font-weight: 300;
+}
+video{
+    width: 100%;
+}
 .intro{
     color: #ffffff;
     line-height: 200%;
 
 }
 #ourTreatments{
-    background-color: #FCEAC6;
+    margin-left: 15%;
+    margin-right: 15%; 
 }
+#ourTreatmentsText{
+    margin-left: 35%;
+}
+#forBusinesses{
+    background-color: #FCEAC6;
+    color: #222222;
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+#price{
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+#logoBig{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+/*#price{
+    margin-left: 15%;
+    margin-right: 15%; 
+}*/
 /*black box containing group memb + date*/
 #byline {
     background-color: black;
