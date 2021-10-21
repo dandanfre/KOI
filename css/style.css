@@ -38,18 +38,25 @@ video{
     line-height: 200%;
 
 }
+
 #ourTreatments{
     margin-left: 15%;
-    margin-right: 15%; 
+    margin-right: 15%;
 }
+
 #ourTreatmentsText{
     margin-left: 35%;
 }
 #forBusinesses{
     background-color: #FCEAC6;
-    color: #222222;
+    color: #222222; 
+}
+#forBusinessesContainer{
     margin-left: 15%;
-    margin-right: 15%; 
+    margin-right: 15%;
+}
+#forBusinessesText{
+    margin-right: 50%;
 }
 #price{
     margin-left: 15%;
