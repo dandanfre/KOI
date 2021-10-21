@@ -1,16 +1,27 @@
 body{
     font-family: degular,Verdana, sans-serif;
     font-style: normal;
-    font-size: 300;
+    font-size: 24;
+    font-weight: 300;
     margin-left: 15%;
+    background-color: #222222;
 }
 
 h1{
     margin: auto;
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 36;
+    font-weight: 400;
 }
 
 h2{
     margin-top: 5%;
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 36;
+    font-weight: 400;
+
 }
 
 
@@ -19,7 +30,9 @@ h2{
     line-height: 200%;
 
 }
-
+#ourTreatments{
+    background-color: #FCEAC6;
+}
 /*black box containing group memb + date*/
 #byline {
     background-color: black;
