@@ -4,58 +4,89 @@
         <title>Insert description of HTML page here</title>
         <meta charset="utf-8" />
         <link rel="stylesheet"
-        href="css/style.css"
+        href="style.css"
         type ="text/css"/>
     </head>
     <body>
         <div id ="navbar"><!--Leave empty--></div>
         <!--Write your code here-->
+        <div>
+            <div>
+                <h2>Who we are</h2>
      
-        <h1>What we offer</h1>
-     
-            <p>Lorem imspum</p>
-        <section>
-           
-            <h2>Our massesuses</h2>
-           
-            <img src="bilde1.jpg" alt="celine">
-            <h3>Celine Borge Byrkjeland</h3>
-            <h4>Back Massage</h4>
-            <img src="bilde1.jpg" alt="celine">
-            <h5>Celine Hogstad Nilsen</h5>
-            <h6>Back Massage</h6>
-            <img src="bilde1.jpg" alt="celine">
-            <h7>Daniel Fremning</h7>
-            <h8>Full body massage</h8>
-            <img src="bilde1.jpg" alt="celine">
-            <h9>Ida Marie Mauseth</h9>
-            <h10>Neck and leg massage</h10>
-            <img src="bilde1.jpg" alt="celine">
-            <h11>Khai </h11>
-            <h12>CEO</h12>
-        </section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u</p>
+            </div>
 
-        <button>Book</button>
+            <div>
+                <h2>Our masseuses</h2>
+                <div>
+                    <div class="divBorder">
+                        <div class="leftPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Hans Olsen</p>
+                            <p class="massageType">Back Massage</p>
+                        </div>
+                        <div class="rightPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Ole Hansen</p>
+                            <p class="massageType">Back Massage</p>
+                        </div>
+                    </div>
+                    <div class="divBorder">
+                        <div class="leftPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Hans Olsen</p>
+                            <p class="massageType">Full body massage</p>
+                        </div>
+                        <div class="rightPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Ole Hansen</p>
+                            <p class="massageType">Neck and leg massage</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="centerPicBox">
+                    <img src="MassPic.png" alt="profil" width="150">
+                    <p class="nameMasseuses">Ole Hansen</p>
+                    <p class="massageType">CEO</p>
+                </div>
 
-     
-        <h13>Our parlor</h13>
-    
+                <button class="greenButton">Book</button>
+            </div>
+            <div>
+                <h2>Our parlor</h2>
+                <div>
+                    <div id="imageCarousel"> </div>    <!--Denne skal benyttes av JS-->
+                    <p id ="imageCarouselText">Our room</p>
+                </div>
+                <div class="Address">
+                    <p>Address</p>
+                    <p>Bassengbakken 4</p>
+                    <p>Trondheim</p>
+                    <p>Norway</p>
+                    <div id ="googleMap"></div>
+                </div>
+                <div class="contactInfo">
+                    <p>phone: +4790909090</p>
+                    <p>email: contact@koi.no</p>
+                </div>
 
-        <img src="bilde.jpg" alt="">
-        <section>
-            <p>Adress</p>
-            <p>Bassengbakken 4</p>
-            <p>Trondheim</p>
-            <p>Norway</p>
-            <p>phone: +4790909090</p>
-            <p>email: contact@koi.no</p>
-        </section>
+                <button class="greenButton">Contact us</button>
+            </div>
+        </div>
 
-        <img src="kart.jpg" alt="">
-
-        <button>Contact us</button>
-    
         <div id ="footer"><!--Leave empty--></div>
+        <script>
+            function myMap(){
+                var mapProp= {
+                    center: new google.maps.LatLng(51, -1),
+                    zoom: 5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+            </script>
+        <script>src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"</script>
     </body>
 
 </html>
