@@ -33,13 +33,13 @@ h3{
 video{
     width: 100%;
 }
-.intro{ /* vet ikke om dette er en del av P3, og ikke P2*/
-    color: #ffffff;
-    line-height: 200%;
 
-}
-
+/*
 #ourTreatments{
+    margin-left: 15%;
+    margin-right: 15%;
+}*/
+.sectionIndex{
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -51,17 +51,21 @@ video{
     background-color: #FCEAC6;
     color: #222222; 
 }
+
+
+/*
 #forBusinessesContainer{
     margin-left: 15%;
     margin-right: 15%;
-}
+}*/
 #forBusinessesText{
     margin-right: 50%;
 }
+/*
 #price{
     margin-left: 15%;
     margin-right: 15%; 
-}
+}*/
 #logoBig{
     display: block;
     margin-left: auto;
@@ -72,98 +76,3 @@ video{
     margin-left: 15%;
     margin-right: 15%; 
 }*/
-/*black box containing group memb + date*/
-#byline {
-    background-color: black;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    margin-right: 250px;
-    width:80%;
-    
-}
-
-/*section containing all paragraph-essays*/
-section, .websiteApp{
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-
-
-/*general paragraph with description*/
-.essay,.webpage, .req,.subsec,.essay_w_pic{
-    line-height: 150%;
-    width:45%;
-}
-
-/*horizontal line*/
-hr{
-    margin-top: 20px;
-    width: 40%;
-    float: left;
-}
-
-/*Unordered list*/
-.subsec{
-    list-style: lower-alpha;
-}
-
-/*nav_structure_picture*/
-/*den er ikek satt sammen koden bildene fordi og holde koden separat gir annen atferd*/
-#websitenav {
-    width:40vw;
-    height: auto;
-}
-
-
-/*styling for bildene, dreier seg mest om skalering*/
-#websitenav, #indexPage, #our_treatments, #about,#contact,#book {
-    width: 40vw;
-    height: auto;
-    /*margin-left: auto;
-    margin-right: auto;*/
-    
- }
-
-
-/*Ordered list for js-requirements*/
-ol{
-    list-style: upper-roman;
-    /*margin: 30% 0;*/
-}
-
-ul{
-    line-height: 150%;
-    width:40%;
-}
-
-/*Rest of styling so for table at the bottom of the page*/
-
-table{
-    /*border: 2px solid black;*/
-    width: 80%; /*matches the width of byline*/
-    margin-right: 10%;
-    margin-bottom: 10%;
-    margin-top: -7%;
-
-}
-/*row header of table*/
-th{
-    background-color: black;
-    color:white;
-    text-align: left;
-    padding-top: 1%;
-}
-
-td{
-    text-align:left;
-}
-/*colors every even-row light-gray*/
-tbody>tr:nth-child(even){
-    background-color: rgb(221, 221, 221);
-} 
-/*colors the "Responsible" column*/
-tr>td:nth-child(3){
-    background-color: rgba(234, 255, 248, 0.945);
-}
-
