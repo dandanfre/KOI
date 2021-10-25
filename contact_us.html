@@ -7,29 +7,38 @@
         href="css/style.css"
         type ="text/css"/>
         <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
+        <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
+        <link rel="stylesheet" href="css/style.css" type ="text/css"/>
+
     </head>
     <body>
         <div id ="navbar"><!--Leave empty--></div>
 
+        <div id = "contactUs">
+
         <form>
 
           <label> Name </label><br>
-          <input type="text" name="name" required/>
+          <input class = "name" class = "inputfieldSmall" type="text" name="name" required/>
 
           <br>
 
-          <label> Phone number </label><br>
-          <input type="tel" name="phone_number" pattern="[0-9]{8}" required/>
+          <div class = phoneAndEmail>
+            <div class = "innerPhoneAndEmail">
+              <label> Phone number </label><br>
+              <input class = "phoneNumber" type="tel" name="phone_number" pattern="[0-9]{8}" required/>
+            </div>
 
-          <br>
-
-          <label> Email </label><br>
-          <input type="email" name="email" required/>
+            <div class = "innerPhoneAndEmail">
+              <label> Email </label><br>
+              <input class = "email" type="email" name="email" required/>
+            </div>
+          </div>
 
           <br>
 
           <label> Subject </label><br>
-          <select name="subject" required>
+          <select name="subject" required id = "subject">
             <option disabled selected value> -- Select an option -- </option>
             <option value="cooperation">Cooperation</option>
             <option value="press">Press</option>
@@ -41,13 +50,15 @@
           <br>
 
           <label> Message </label><br>
-          <textarea name="message" required></textarea>
+          <textarea id = "message" name="message" required></textarea>
 
           <br>
 
-          <input type="submit" value="Send">
+          <input class = "greenButton" type="submit" value="Send">
 
         </form>
+
+      </div>
 
         <div id ="footer"><!--Leave empty--></div>
     </body>

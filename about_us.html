@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Insert description of HTML page here</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet"
+        href="style.css"
+        type ="text/css"/>
+    </head>
+    <body>
+        <div id ="navbar"><!--Leave empty--></div>
+        <!--Write your code here-->
+        <div>
+            <div>
+                <h2>Who we are</h2>
+     
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u</p>
+            </div>
+
+            <div>
+                <h2>Our masseuses</h2>
+                <div>
+                    <div class="divBorder">
+                        <div class="leftPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Hans Olsen</p>
+                            <p class="massageType">Back Massage</p>
+                        </div>
+                        <div class="rightPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Ole Hansen</p>
+                            <p class="massageType">Back Massage</p>
+                        </div>
+                    </div>
+                    <div class="divBorder">
+                        <div class="leftPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Hans Olsen</p>
+                            <p class="massageType">Full body massage</p>
+                        </div>
+                        <div class="rightPicBox">
+                            <img src="MassPic.png" alt="profil" width="150">
+                            <p class="nameMasseuses">Ole Hansen</p>
+                            <p class="massageType">Neck and leg massage</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="centerPicBox">
+                    <img src="MassPic.png" alt="profil" width="150">
+                    <p class="nameMasseuses">Ole Hansen</p>
+                    <p class="massageType">CEO</p>
+                </div>
+
+                <button class="greenButton">Book</button>
+            </div>
+            <div>
+                <h2>Our parlor</h2>
+                <div>
+                    <div id="imageCarousel"> </div>    <!--Denne skal benyttes av JS-->
+                    <p id ="imageCarouselText">Our room</p>
+                </div>
+                <div class="Address">
+                    <p>Address</p>
+                    <p>Bassengbakken 4</p>
+                    <p>Trondheim</p>
+                    <p>Norway</p>
+                    <div id ="googleMap"></div>
+                </div>
+                <div class="contactInfo">
+                    <p>phone: +4790909090</p>
+                    <p>email: contact@koi.no</p>
+                </div>
+
+                <button class="greenButton">Contact us</button>
+            </div>
+        </div>
+
+        <div id ="footer"><!--Leave empty--></div>
+        <script>
+            function myMap(){
+                var mapProp= {
+                    center: new google.maps.LatLng(51, -1),
+                    zoom: 5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                }
+            </script>
+        <script>src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"</script>
+    </body>
+
+</html>
