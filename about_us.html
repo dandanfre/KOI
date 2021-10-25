@@ -6,6 +6,8 @@
         <link rel="stylesheet"
         href="style.css"
         type ="text/css"/>
+        <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
+        <script src="./map.js"></script>
     </head>
     <body>
         <div id ="navbar"><!--Leave empty--></div>
@@ -65,7 +67,7 @@
                     <p>Bassengbakken 4</p>
                     <p>Trondheim</p>
                     <p>Norway</p>
-                    <div id ="googleMap"></div>
+                    <div id="map"></div>
                 </div>
                 <div class="contactInfo">
                     <p>phone: +4790909090</p>
@@ -77,16 +79,9 @@
         </div>
 
         <div id ="footer"><!--Leave empty--></div>
-        <script>
-            function myMap(){
-                var mapProp= {
-                    center: new google.maps.LatLng(51, -1),
-                    zoom: 5,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                }
-            </script>
-        <script>src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"</script>
-    </body>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+            async></script>
+        </body>
 
 </html>
