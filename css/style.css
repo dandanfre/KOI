@@ -3,44 +3,44 @@ body{
     font-style: normal;
     font-size: 24px;
     font-weight: 300;
-    /*margin-left: 15%;*/
     background-color: #222222;
     color: white
 }
 
-h1{
-    margin: auto;
+/*common attr. for h1-h3*/
+h1, h2, h3{
     font-family: degular,Verdana, sans-serif;
     font-style: normal;
+}
+
+/*common attr. for h1,h2*/
+h1, h2{
     font-size: 36;
     font-weight: 400;
+}
+
+/*Styling for inividual header-el.*/
+h1{
+    margin: auto;
 }
 
 h2{
     margin-top: 5%;
-    font-family: degular,Verdana, sans-serif;
-    font-style: normal;
-    font-size: 36;
-    font-weight: 400;
-
-
 }
 h3{
-    font-family: degular,Verdana, sans-serif;
-    font-style: normal;
     font-size: 24;
     font-weight: 300;
 }
+
 video{
     width: 100%;
 }
 .intro{
     color: #ffffff;
     line-height: 200%;
-
 }
 
-#ourTreatments{
+#ourTreatments, #forBusinessesContainer, #price {
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -52,226 +52,135 @@ video{
     background-color: #FCEAC6;
     color: #222222;
 }
-#forBusinessesContainer{
-    margin-left: 15%;
-    margin-right: 15%;
-}
+
 #forBusinessesText{
     margin-right: 50%;
 }
-#price{
-    margin-left: 15%;
-    margin-right: 15%;
-}
+
 #logoBig{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30%;
 }
-/*#price{
-    margin-left: 15%;
-    margin-right: 15%;
-}*/
-/*black box containing group memb + date*/
-#byline {
-    background-color: black;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    margin-right: 250px;
-    width:80%;
 
+
+/*-----Styling common-el. in book.html + contact_us.html------*/
+#message,.name, #treatment, .phoneNumber, #date,.email, #time, #subject{
+    background-color: #FCEAC6;
+    color: #222222;
+    border: 1.5px solid #222222;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;   
 }
+
+/*same styling for name- and treatment-input*/
+/*(name occurs in contact_us.html + book.html)*/
+.name, #treatment {
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+/*same styling for phoneNumber- and date-input*/
+/*(phoneNumber occurs in contact_us.html + book.html)*/
+.phoneNumber, #date {
+    width: 79%;
+    margin-top: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }
+/*same styling for email- and time*/
+/*(email occurs in contact_us.html + book.html)*/
+.email, #time {
+    width: 100%;
+    margin-top: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-h3{
+  
+/*input for phone + email is same as input for date + time*/
+.phoneAndEmail, #dateAndTime {
+    display: flex;
+    flex-direction: row;
+}
+  
+.innerPhoneAndEmail,.innerDateAndTime {
+    flex: 100%;
+}
+
+.greenButton {
+    background-color: #678D58;
+    color: #FFFFFF;
+    font-size: 20px;
     font-family: degular,Verdana, sans-serif;
     font-style: normal;
-    font-size: 24;
-    font-weight: 300;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px #222222;
+    float: right;
 }
-video{
-    width: 100%;
-}
-
-/*
-#ourTreatments{
-    margin-left: 15%;
-    margin-right: 15%;
-}*/
-.sectionIndex{
-    margin-left: 15%;
-    margin-right: 15%;
+  
+.greenButton:active {
+box-shadow: inset 5px 5px 5px #222222;
 }
 
+/*-----Styling common-el. in book.html + contact_us.html ends here------*/
 
-
-/*styling for bildene, dreier seg mest om skalering*/
-#websitenav, #indexPage, #our_treatments, #about,#contact,#book {
-    width: 40vw;
-    height: auto;
-    /*margin-left: auto;
-    margin-right: auto;*/
-
- }
-
-
-/*Ordered list for js-requirements*/
-ol{
-    list-style: upper-roman;
-    /*margin: 30% 0;*/
-=======
-#ourTreatmentsText{
-    margin-left: 35%;
-
-}
-#forBusinesses{
-    background-color: #FCEAC6;
-    color: #222222; 
-}
-
-
-td{
-    text-align:left;
-}
-/*colors every even-row light-gray*/
-tbody>tr:nth-child(even){
-    background-color: rgb(221, 221, 221);
-}
-/*colors the "Responsible" column*/
-tr>td:nth-child(3){
-    background-color: rgba(234, 255, 248, 0.945);
-}
-
-/*contact_us*/
-
+/*-------------------contact_us.html el. styling -----------------------*/
 #contactUs {
+  width: 100%;
   background-color: #FCEAC6;
-  color: #222222;
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 3%;
+}
+
+#contactUs label{
+    color: #222222;
 }
 
 #message {
-  background-color: #FCEAC6;
   width: 100%;
   height: 100px !important;
   margin-top: 2%;
   margin-bottom: 3%;
-  border: 1px solid #222222;
-  border-radius: 5px;
   padding-top: 1%;
   padding-bottom: 1%;
-  font-size: 20px;
-  font-family: degular,Verdana, sans-serif;
-  font-style: normal;
-  color: #222222;
   resize: none;
 }
 
-.name {
-  width: 100%;
-  height: 20%;
-  background-color: #FCEAC6;
-  margin-top: 2%;
-  margin-bottom: 4%;
-  border: 1px solid #222222;
-  border-radius: 5px;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-size: 20px;
-  font-family: degular,Verdana, sans-serif;
-  font-style: normal;
-  color: #222222;
-}
-
-.phoneNumber {
-  width: 79%;
-  background-color: #FCEAC6;
-  margin-top: 4%;
-  border: 1px solid #222222;
-  border-radius: 5px;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  font-size: 20px;
-  font-family: degular,Verdana, sans-serif;
-  font-style: normal;
-  color: #222222;
-}
-
-.email {
-  width: 100%;
-  background-color: #FCEAC6;
-  margin-top: 4%;
-  border: 1px solid #222222;
-  border-radius: 5px;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  font-size: 20px;
-  font-family: degular,Verdana, sans-serif;
-  font-style: normal;
-  color: #222222;
-}
-
-.phoneAndEmail {
-  display: flex;
-  flex-direction: row;
-}
-
-.innerPhoneAndEmail {
-  flex: 100%;
-}
 
 #subject {
   width: 40%;
-  background-color: #FCEAC6;
   margin-top: 2%;
   margin-bottom: 4%;
-  border: 1px solid #222222;
-  border-radius: 5px;
   padding-top: 1%;
   padding-bottom: 1%;
-  font-size: 20px;
-  font-family: degular,Verdana, sans-serif;
-  font-style: normal;
-  color: #222222;
 }
 
-.greenButton {
-  background-color: #678D58;
-  color: #FFFFFF;
-  font-size: 20px;
-  font-family: degular,Verdana, sans-serif;
-  font-style: normal;
-  padding: 5px 20px;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0px 4px 8px #222222;
-  float: right;
+/*----------------------book.html el. styling -------------------------*/
+#book{
+    background-color: #222222;
+    color: #FCEAC6;
+    width: 100%;
+  }
+
+
+form{
+    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-/*
-#forBusinessesContainer{
-    margin-left: 15%;
-    margin-right: 15%;
-}*/
-#forBusinessesText{
-    margin-right: 50%;
-}
-/*
-#price{
-    margin-left: 15%;
-    margin-right: 15%; 
-}*/
-#logoBig{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-}
-/*#price{
-    margin-left: 15%;
-    margin-right: 15%; 
-}*/
 
+
+/*input fields in book.html*/
+#bookForm input:not(.greenButton), #bookForm select {
+    background-color: #222222;
+    border: 1.5px solid #FCEAC6;
+    color: #FCEAC6;
+}
