@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang = "en">
-    <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
     <head>
         <title>Insert description of HTML page here</title>
         <meta charset="utf-8" />
         <link rel="stylesheet"
         href="css/style.css"
         type ="text/css"/>
+        <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
     </head>
     <body>
-        <div id ="navbar"><!--Leave empty--></div>
-        <!--Write your code here-->
-        <form>
-            <!--<legend>Personal Information</legend>-->
-            <label>Name</label><br>
-            <input type="text" placeholder="Your name" pattern="([a-zA-Z\s]){1,}" required/><br>
-            <!--pattern is to set alphabetical and space as the only valid inputs-->
-            
-            <label>Phone number</label>
-            <label>Email</label><br>
-            <!--input fields for teleNo. and Email goes under the labels-->
-            <input type="tel" placeholder="E.g. 40107608" pattern="([0-9]){8}" required/>
-            <input type="email" placeholder="E.g. hello@gmail.com" required/> <br>
-            
-            <label>Select treatment</label><br>
-            <select id ="treatment" required>
-                <option disabled selected value=""> -- Select an option -- </option>
-                <option value ="Neck">Neck</option>
-                <option value="Back">Back</option>
-                <option value ="Upper Body">Upper Body</option>
-                <option value="Lower Body">Lower Body</option>
-                <option value ="Full Massage">Full Massage</option>
-            </select><br>
-
-            <label>Select date</label>
-            <label>Select time: Start - End</label><br>
-            <!--input form on new line-->
-            <input type="date" required >
-            <input type="time" required min="10:00" max="16:15"> 
-            <!--The parlor opens 10am and each session lasts 45min-->
-            <input type="time" required min="10:45" max="17:00"><br>
-            <!--The parlor closes 17pm-->
-            <input type="submit" value="Confirm">
-        </form>
-
+        <div id ="navbar"><!--Leave blank--></div>
+        
+        <div id ="book">
+            <form id="bookForm">
+                <!--<legend>Personal Information</legend>-->
+                <label>Name</label><br>
+                <input id="nameBook" class="name" type="text" placeholder="Your name" pattern="([a-zA-Z\s]){1,}" required/><br>
+                <!--pattern is to set alphabetical and space as the only valid inputs-->
+                
+                <div class="phoneAndEmail">
+                    <div class="innerPhoneAndEmail">
+                        <label>Phone number</label><br>
+                        <input id="phoneNumberBook" class="phoneNumber" type="tel" placeholder="E.g. 40107608" pattern="([0-9]){8}" required/>
+                    </div>
+                    <div class="innerPhoneAndEmail">
+                        <label>Email</label><br>
+                        <input id="emailBook" class="email" type="email" placeholder="E.g. hello@gmail.com" required/> 
+                    </div>                 
+                </div>
+                <br>
+                <label>Select treatment</label><br>
+                <select id ="treatment" required>
+                    <option disabled selected value=""> -- Select an option -- </option>
+                    <option value ="Neck">Neck</option>
+                    <option value="Back">Back</option>
+                    <option value ="Upper Body">Upper Body</option>
+                    <option value="Lower Body">Lower Body</option>
+                    <option value ="Full Massage">Full Massage</option>
+                </select>
+                <br>
+                <br>
+                <div id="dateAndTime">
+                    <div class ="innerDateAndTime">
+                        <label>Select date:</label>
+                        <br>
+                        <input id="date" type="date" required >
+                    </div>
+                    <div class="innerDateAndTime">
+                        <label>Select time: </label><br>
+                        <select id="time" required> 
+                            <option disabled selected value="">--Select time--</option>
+                            <option value="10:00-10:45">10:00-10:45</option>
+                            <option value="10:45-11:30">10:45-11:30</option>
+                            <option value="11:30-12:15">11:30-12:15</option>
+                            <option value="12:15-13:00">12:15-13:00</option>
+                            <option value="13:00-13:45">13:00-13:45</option>
+                            <option value="13:45-14:30">13:45-14:30</option>
+                            <option value="14:30-15:15">14:30-15:15</option>
+                            <option value="15:15-16:00">15:15-16:00</option>
+                        </select>
+                    </div>        
+                </div>
+                <!--From text input to select-->
+                <br>
+                <br>
+                <br>
+                <input class = "greenButton" type="submit" value="Confirm">
+            </form>
+        </div>
         
         <div id ="footer"><!--Leave empty--></div>
     </body>
