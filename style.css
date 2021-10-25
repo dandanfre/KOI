@@ -1,0 +1,263 @@
+body{
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 300;
+    background-color: #222222;
+    color: white
+}
+
+/*common attr. for h1-h3*/
+h1, h2, h3{
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+}
+
+/*common attr. for h1,h2*/
+h1, h2{
+    font-size: 36;
+    font-weight: 400;
+}
+
+/*Styling for inividual header-el.*/
+h1{
+    margin: auto;
+}
+
+h2{
+    margin-top: 5%;
+}
+h3{
+    font-size: 24;
+    font-weight: 300;
+}
+
+/*----------------------index.html el. styling -------------------------*/
+
+video{
+    width: 100%;
+}
+
+#landingPage {
+  position: relative;
+}
+
+#logoBig {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+#treeImage {
+  display: none;
+}
+
+@media only screen and (max-width: 940px) {
+video {
+  display: none;
+  }
+#treeImage {
+  display: inline;
+  height: auto;
+  width: 100%;
+  }
+}
+
+#ourTreatments, #forBusinesses{
+  display: flex;
+  flex-direction: row;
+}
+
+#ourTreatmentsText, #forBusinessesText{
+  flex: 120%;
+}
+
+#ourTreatmentsImgDiv,  #forBusinessesImgDiv{
+  flex: 80%;
+  position: relative;
+}
+
+#ourTreatmentsImg{
+  width: 80%;
+  height: 63%;
+  margin-left: 10%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 7.5%;
+}
+
+#forBusinessesImg{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  margin-left: 5%;
+  margin-top: 25%;
+}
+
+#ourTreatmentsText{
+  margin-right: 5%;
+}
+
+#forBusinessesText{
+  margin-left: 5%;
+}
+
+#forBusinesses{
+  padding-bottom: 7%;
+  color: #222222;
+  background-color: #FCEAC6;
+}
+
+#forBusinesses .greenButton{
+  margin-left: 75%;
+}
+
+#ourTreatmentsBack{
+  padding-bottom: 3%;
+}
+
+#ourTreatmentsBack .greenButton{
+  margin-left: 87%;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+#priceList ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#priceList .greenButton{
+  box-shadow: 0px 4px 8px #000000;
+}
+
+#priceList {
+  margin-left: 5%;
+  padding-bottom: 5%;
+}
+
+/*-----Styling common-el. in book.html + contact_us.html------*/
+#message,.name, #treatment, .phoneNumber, #date,.email, #time, #subject{
+    background-color: #FCEAC6;
+    color: #222222;
+    border: 1.5px solid #222222;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+}
+
+/*same styling for name- and treatment-input*/
+/*(name occurs in contact_us.html + book.html)*/
+.name, #treatment {
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+/*same styling for phoneNumber- and date-input*/
+/*(phoneNumber occurs in contact_us.html + book.html)*/
+.phoneNumber, #date {
+    width: 79%;
+    margin-top: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+ }
+/*same styling for email- and time*/
+/*(email occurs in contact_us.html + book.html)*/
+.email, #time {
+    width: 100%;
+    margin-top: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/*input for phone + email is same as input for date + time*/
+.phoneAndEmail, #dateAndTime {
+    display: flex;
+    flex-direction: row;
+}
+
+.innerPhoneAndEmail,.innerDateAndTime {
+    flex: 100%;
+}
+
+.greenButton {
+    background-color: #678D58;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px #222222;
+}
+
+form .greenButton {
+    float: right;
+}
+
+.greenButton:active {
+box-shadow: inset 5px 5px 5px #222222;
+}
+
+/*-----Styling common-el. in book.html + contact_us.html ends here------*/
+
+/*-------------------contact_us.html el. styling -----------------------*/
+#contactUs {
+  width: 100%;
+  background-color: #FCEAC6;
+}
+
+#contactUs label{
+    color: #222222;
+}
+
+#message {
+  width: 100%;
+  height: 100px !important;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  resize: none;
+}
+
+
+#subject {
+  width: 40%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/*----------------------book.html el. styling -------------------------*/
+#book{
+    background-color: #222222;
+    color: #FCEAC6;
+    width: 100%;
+  }
+
+
+form{
+    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#bookForm .greenButton{
+  box-shadow: 0px 4px 8px #000000;
+}
+
+/*input fields in book.html*/
+#bookForm input:not(.greenButton), #bookForm select {
+    background-color: #222222;
+    border: 1.5px solid #FCEAC6;
+    color: #FCEAC6;
+}
