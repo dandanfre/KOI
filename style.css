@@ -1,0 +1,34 @@
+.leftPicBox{
+    float:left;
+    background-color: aqua;
+}
+
+.rightPicBox{
+    float:right;
+    background-color: rgb(189, 186, 35);
+}
+
+body{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+#centerPicBox{
+    float:bottom;
+}
+
+.divBorder{
+    border: red;
+    width: 2px;;
+}
+
+#imageCarousel{
+    width: 20vw;
+    height:10vh;
+}
+
+#map{
+    width:100%;
+    height: 400px;
+}

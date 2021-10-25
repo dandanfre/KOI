@@ -23,6 +23,7 @@ h2{
     font-size: 36;
     font-weight: 400;
 
+
 }
 h3{
     font-family: degular,Verdana, sans-serif;
@@ -82,38 +83,27 @@ video{
     width:80%;
 
 }
-
-/*section containing all paragraph-essays*/
-section, .websiteApp{
-    margin-top: 30px;
-    margin-bottom: 100px;
+}
+h3{
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 24;
+    font-weight: 300;
+}
+video{
+    width: 100%;
 }
 
-
-/*general paragraph with description*/
-.essay,.webpage, .req,.subsec,.essay_w_pic{
-    line-height: 150%;
-    width:45%;
+/*
+#ourTreatments{
+    margin-left: 15%;
+    margin-right: 15%;
+}*/
+.sectionIndex{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-/*horizontal line*/
-hr{
-    margin-top: 20px;
-    width: 40%;
-    float: left;
-}
-
-/*Unordered list*/
-.subsec{
-    list-style: lower-alpha;
-}
-
-/*nav_structure_picture*/
-/*den er ikek satt sammen koden bildene fordi og holde koden separat gir annen atferd*/
-#websitenav {
-    width:40vw;
-    height: auto;
-}
 
 
 /*styling for bildene, dreier seg mest om skalering*/
@@ -130,30 +120,16 @@ hr{
 ol{
     list-style: upper-roman;
     /*margin: 30% 0;*/
-}
-
-ul{
-    line-height: 150%;
-    width:40%;
-}
-
-/*Rest of styling so for table at the bottom of the page*/
-
-table{
-    /*border: 2px solid black;*/
-    width: 80%; /*matches the width of byline*/
-    margin-right: 10%;
-    margin-bottom: 10%;
-    margin-top: -7%;
+=======
+#ourTreatmentsText{
+    margin-left: 35%;
 
 }
-/*row header of table*/
-th{
-    background-color: black;
-    color:white;
-    text-align: left;
-    padding-top: 1%;
+#forBusinesses{
+    background-color: #FCEAC6;
+    color: #222222; 
 }
+
 
 td{
     text-align:left;
@@ -274,3 +250,28 @@ tr>td:nth-child(3){
   box-shadow: 0px 4px 8px #222222;
   float: right;
 }
+
+/*
+#forBusinessesContainer{
+    margin-left: 15%;
+    margin-right: 15%;
+}*/
+#forBusinessesText{
+    margin-right: 50%;
+}
+/*
+#price{
+    margin-left: 15%;
+    margin-right: 15%; 
+}*/
+#logoBig{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+/*#price{
+    margin-left: 15%;
+    margin-right: 15%; 
+}*/
+
