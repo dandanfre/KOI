@@ -1,3 +1,66 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Insert description of HTML page here</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
+        <link rel="stylesheet" href="css/style.css" type ="text/css"/>
+    </head>
+    <body>
+        <div id ="navbar"><!--Leave empty--></div>
+
+        <div id = "contactUs">
+
+        <form>
+
+          <label> Name </label><br>
+          <input class = "name" class = "inputfieldSmall" type="text" name="name" required/>
+
+          <br>
+
+          <div class = phoneAndEmail>
+            <div class = "innerPhoneAndEmail">
+              <label> Phone number </label><br>
+              <input class = "phoneNumber" type="tel" name="phone_number" pattern="[0-9]{8}" required/>
+            </div>
+
+            <div class = "innerPhoneAndEmail">
+              <label> Email </label><br>
+              <input class = "email" type="email" name="email" required/>
+            </div>
+          </div>
+
+          <br>
+
+          <label> Subject </label><br>
+          <select name="subject" required id = "subject">
+            <option disabled selected value> -- Select an option -- </option>
+            <option value="cooperation">Cooperation</option>
+            <option value="press">Press</option>
+            <option value="discount">Discount</option>
+            <option value="deals">Deals</option>
+            <option value="other">Other</option>
+          </select>
+
+          <br>
+
+          <label> Message </label><br>
+          <textarea id = "message" name="message" required></textarea>
+
+          <br>
+
+          <input class = "greenButton" type="submit" value="Send">
+
+        </form>
+
+      </div>
+
+        <div id ="footer"><!--Leave empty--></div>
+    </body>
+
+</html>
+=======
 <!DOCTYPE html>
 <html lang = "en">
     <head>
