@@ -32,38 +32,110 @@ h3{
     font-weight: 300;
 }
 
+/*----------------------index.html el. styling -------------------------*/
+
 video{
     width: 100%;
 }
-.intro{
-    color: #ffffff;
-    line-height: 200%;
+
+#landingPage {
+  position: relative;
 }
 
-#ourTreatments, #forBusinessesContainer, #price {
-    margin-left: 15%;
-    margin-right: 15%;
+#logoBig {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+#treeImage {
+  display: none;
+}
+
+@media only screen and (max-width: 940px) {
+video {
+  display: none;
+  }
+#treeImage {
+  display: inline;
+  height: auto;
+  width: 100%;
+  }
+}
+
+#ourTreatments, #forBusinesses{
+  display: flex;
+  flex-direction: row;
+}
+
+#ourTreatmentsText, #forBusinessesText{
+  flex: 120%;
+}
+
+#ourTreatmentsImgDiv,  #forBusinessesImgDiv{
+  flex: 80%;
+  position: relative;
+}
+
+#ourTreatmentsImg{
+  width: 80%;
+  height: 63%;
+  margin-left: 10%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 7.5%;
+}
+
+#forBusinessesImg{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  margin-left: 5%;
+  margin-top: 25%;
 }
 
 #ourTreatmentsText{
-    margin-left: 35%;
-}
-#forBusinesses{
-    background-color: #FCEAC6;
-    color: #222222;
+  margin-right: 5%;
 }
 
 #forBusinessesText{
-    margin-right: 50%;
+  margin-left: 5%;
 }
 
-#logoBig{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+#forBusinesses{
+  padding-bottom: 7%;
+  color: #222222;
+  background-color: #FCEAC6;
 }
 
+#forBusinesses .greenButton{
+  margin-left: 75%;
+}
+
+#ourTreatmentsBack{
+  padding-bottom: 3%;
+}
+
+#ourTreatmentsBack .greenButton{
+  margin-left: 87%;
+  box-shadow: 0px 4px 8px #000000;
+}
+
+#priceList ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#priceList .greenButton{
+  box-shadow: 0px 4px 8px #000000;
+}
+
+#priceList {
+  margin-left: 5%;
+  padding-bottom: 5%;
+}
 
 /*-----Styling common-el. in book.html + contact_us.html------*/
 #message,.name, #treatment, .phoneNumber, #date,.email, #time, #subject{
@@ -73,7 +145,7 @@ video{
     border-radius: 5px;
     font-size: 20px;
     font-family: degular,Verdana, sans-serif;
-    font-style: normal;   
+    font-style: normal;
 }
 
 /*same styling for name- and treatment-input*/
@@ -103,13 +175,13 @@ video{
     padding-top: 2%;
     padding-bottom: 2%;
 }
-  
+
 /*input for phone + email is same as input for date + time*/
 .phoneAndEmail, #dateAndTime {
     display: flex;
     flex-direction: row;
 }
-  
+
 .innerPhoneAndEmail,.innerDateAndTime {
     flex: 100%;
 }
@@ -124,9 +196,12 @@ video{
     border: none;
     border-radius: 20px;
     box-shadow: 0px 4px 8px #222222;
+}
+
+form .greenButton {
     float: right;
 }
-  
+
 .greenButton:active {
 box-shadow: inset 5px 5px 5px #222222;
 }
@@ -176,7 +251,9 @@ form{
     padding-right: 10%;
 }
 
-
+#bookForm .greenButton{
+  box-shadow: 0px 4px 8px #000000;
+}
 
 /*input fields in book.html*/
 #bookForm input:not(.greenButton), #bookForm select {
