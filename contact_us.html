@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Contact us</title>
+        <title>Get in touch with us</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
         <link rel="stylesheet" href="css/style.css" type ="text/css"/>
@@ -11,51 +11,51 @@
 
         <div id = "contactUs">
 
-        <form>
+          <form id="contactForm">
 
-          <label> Name </label><br>
-          <input class = "name" class = "inputfieldSmall" type="text" name="name" placeholder="Your name" required/>
+            <label> Name </label><br>
+            <input class = "name"  type="text" name="name" required/>
 
-          <br>
+            <br>
 
-          <div class = phoneAndEmail>
-            <div class = "innerPhoneAndEmail">
-              <label> Phone number </label><br>
-              <input class = "phoneNumber" type="tel" name="phone_number" placeholder="E.g. 40107608" pattern="[0-9]{8}" required/>
+            <div class = phoneAndEmail>
+              <div class = "innerPhoneAndEmail">
+                <label> Phone number </label><br>
+                <input class = "phoneNumber" type="tel" name="phone_number" pattern="[0-9]{8}" required/>
+              </div>
+
+              <div class = "innerPhoneAndEmail">
+                <label> Email </label><br>
+                <input class = "email" type="email" name="email" required/>
+              </div>
             </div>
 
-            <div class = "innerPhoneAndEmail">
-              <label> Email </label><br>
-              <input class = "email" type="email" name="email" placeholder="E.g. hello@gmail.com" required/>
-            </div>
-          </div>
+            <br>
 
-          <br>
+            <label> Subject </label><br>
+            <select name="subject" required id = "subject">
+              <option disabled selected value> -- Select an option -- </option>
+              <option value="cooperation">Cooperation</option>
+              <option value="press">Press</option>
+              <option value="discount">Discount</option>
+              <option value="deals">Deals</option>
+              <option value="other">Other</option>
+            </select>
 
-          <label> Subject </label><br>
-          <select name="subject" required id = "subject">
-            <option disabled selected value> -- Select an option -- </option>
-            <option value="cooperation">Cooperation</option>
-            <option value="press">Press</option>
-            <option value="discount">Discount</option>
-            <option value="deals">Deals</option>
-            <option value="other">Other</option>
-          </select>
+            <br>
 
-          <br>
+            <label> Message </label><br>
+            <textarea id = "message" name="message" required></textarea>
 
-          <label> Message </label><br>
-          <textarea id = "message" name="message" required></textarea>
+            <br>
 
-          <br>
-
-          <input class = "greenButton" type="submit" value="Send">
+            <input class = "greenButton" type="submit" value="Send">
 
         </form>
 
       </div>
 
-        <div id ="footer"><!--Leave empty--></div>
+      <div id ="footer"><!--Leave empty--></div>
     </body>
 
 </html>

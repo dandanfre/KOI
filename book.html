@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title>Insert description of HTML page here</title>
+        <title>Book treatment</title>
         <meta charset="utf-8" />
         <link rel="stylesheet"
         href="css/style.css"
@@ -10,14 +10,14 @@
     </head>
     <body>
         <div id ="navbar"><!--Leave blank--></div>
-        
+
         <div id ="book">
             <form id="bookForm">
                 <!--<legend>Personal Information</legend>-->
                 <label>Name</label><br>
                 <input id="nameBook" class="name" type="text" placeholder="Your name" pattern="([a-zA-Z\s]){1,}" required/><br>
                 <!--pattern is to set alphabetical and space as the only valid inputs-->
-                
+
                 <div class="phoneAndEmail">
                     <div class="innerPhoneAndEmail">
                         <label>Phone number</label><br>
@@ -25,8 +25,8 @@
                     </div>
                     <div class="innerPhoneAndEmail">
                         <label>Email</label><br>
-                        <input id="emailBook" class="email" type="email" placeholder="E.g. hello@gmail.com" required/> 
-                    </div>                 
+                        <input id="emailBook" class="email" type="email" placeholder="E.g. hello@gmail.com" required/>
+                    </div>
                 </div>
                 <br>
                 <label>Select treatment</label><br>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="innerDateAndTime">
                         <label>Select time: </label><br>
-                        <select id="time" required> 
+                        <select id="time" required>
                             <option disabled selected value="">--Select time--</option>
                             <option value="10:00-10:45">10:00-10:45</option>
                             <option value="10:45-11:30">10:45-11:30</option>
@@ -59,7 +59,7 @@
                             <option value="14:30-15:15">14:30-15:15</option>
                             <option value="15:15-16:00">15:15-16:00</option>
                         </select>
-                    </div>        
+                    </div>
                 </div>
                 <!--From text input to select-->
                 <br>
@@ -68,7 +68,7 @@
                 <input class = "greenButton" type="submit" value="Confirm">
             </form>
         </div>
-        
+
         <div id ="footer"><!--Leave empty--></div>
     </body>
 

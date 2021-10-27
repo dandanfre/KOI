@@ -34,6 +34,32 @@ h3{
     text-decoration: underline;
 }
 
+.greenButton {
+    background-color: #678D58;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px #222222;
+}
+
+.greenButton:active {
+  box-shadow: inset 5px 5px 5px #222222;
+}
+
+#about .greenButton:active, #book .greenButton:active,
+#ourTreatmentsBack .greenButton:active, #priceList .greenButton:active{
+  box-shadow: inset 5px 5px 5px #000000;
+}
+
+#about .greenButton, #book .greenButton, #ourTreatmentsBack .greenButton,
+#priceList .greenButton {
+  box-shadow: 0px 4px 8px #000000;
+}
+
 /*----------------------index.html el. styling -------------------------*/
 
 video{
@@ -130,6 +156,7 @@ video {
   padding-left: 0;
 }
 
+
 #priceList p{
   max-width:50%;
 }
@@ -139,6 +166,7 @@ video {
   margin-top: -3em;
   display: block;
 }
+
 
 #priceList {
   margin-left: 5%;
@@ -194,24 +222,8 @@ video {
     flex: 100%;
 }
 
-.greenButton {
-    background-color: #678D58;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-family: degular,Verdana, sans-serif;
-    font-style: normal;
-    padding: 5px 20px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px #222222;
-}
-
 form .greenButton {
     float: right;
-}
-
-.greenButton:active {
-box-shadow: inset 5px 5px 5px #222222;
 }
 
 /*-----Styling common-el. in book.html + contact_us.html ends here------*/
@@ -259,13 +271,92 @@ form{
     padding-right: 10%;
 }
 
-#bookForm .greenButton{
-  box-shadow: 0px 4px 8px #000000;
-}
-
 /*input fields in book.html*/
 #bookForm input:not(.greenButton), #bookForm select {
     background-color: #222222;
     border: 1.5px solid #FCEAC6;
     color: #FCEAC6;
+}
+
+/*---------styling for about_us.html-----------*/
+#about{
+    background-image: url("../img/tree_breeze_Moment\ -\ Copy.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#AboutUs   {
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 200;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #222222;
+    color: white;
+    padding: 5% 10%;
+}
+
+#AboutUs h2, .whoWeAreText2{
+    margin-bottom: 15%;
+}
+
+.divBorder{
+    display:flex;
+    flex-direction: row;
+    width:120%;
+    margin-bottom: 15%;
+}
+.leftPicBox, .rightPicBox{
+    flex: 100%;
+
+}
+
+.nameMasseuses, .massageType{
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.massageType{
+    width: 10ch;
+}
+
+#AboutUs .greenButton{
+    margin-left: 37%; /* knappen skal være i midten*/
+    margin-right: 37%;
+    margin-bottom: 15%;
+}
+
+#imageCarousel{
+    width:38.5vw;
+    height:45vh;
+}
+
+#imageCarouselText{
+    margin-left: 37%;
+    margin-right: 37%;
+    margin-bottom:15%;
+}
+.Address{
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 200;
+    display:flex;
+    flex-direction: row;
+}
+
+
+#map{
+    flex:10%;
+    width: 100vw;
+    height: 30vh;
+    margin-left: 10%;
+}
+.contactInfo{
+    font-family: degular,Verdana, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 15%;
 }
