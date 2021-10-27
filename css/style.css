@@ -15,7 +15,7 @@ h1, h2, h3{
 
 /*common attr. for h1,h2*/
 h1, h2{
-    font-size: 36;
+    font-size: 36px;
     font-weight: 400;
 }
 
@@ -31,6 +31,7 @@ h3{
     font-size: 24px;
     font-weight: 300;
     line-height: 0.25;
+    text-decoration: underline;
 }
 
 /*----------------------index.html el. styling -------------------------*/
@@ -142,7 +143,6 @@ video {
 #priceList {
   margin-left: 5%;
   padding-bottom: 5%;
-
 }
 
 /*-----Styling common-el. in book.html + contact_us.html------*/
