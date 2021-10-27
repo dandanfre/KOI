@@ -15,7 +15,7 @@ h1, h2, h3{
 
 /*common attr. for h1,h2*/
 h1, h2{
-    font-size: 36;
+    font-size: 36px;
     font-weight: 400;
 }
 
@@ -28,8 +28,10 @@ h2{
     margin-top: 5%;
 }
 h3{
-    font-size: 24;
+    font-size: 24px;
     font-weight: 300;
+    line-height: 0.25;
+    text-decoration: underline;
 }
 
 .greenButton {
@@ -153,6 +155,18 @@ video {
   list-style-type: none;
   padding-left: 0;
 }
+
+
+#priceList p{
+  max-width:50%;
+}
+#priceList .greenButton{
+  box-shadow: 0px 4px 8px #000000;
+  margin-left: 45%;
+  margin-top: -3em;
+  display: block;
+}
+
 
 #priceList {
   margin-left: 5%;
