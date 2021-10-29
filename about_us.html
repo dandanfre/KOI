@@ -7,7 +7,6 @@
         href="css/style.css"
         type ="text/css"/>
         <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
-        <script src="/js/script.js"></script>
     </head>
     <body id="about">
         <div id ="navbar"><!--Leave empty--></div>
@@ -25,24 +24,24 @@
 
                     <div class="divBorder">
                         <div class="leftPicBox">
-                            <img src="img/MassPic.png" alt="profil" width="150">
+                            <img id = "massPic1" src="img/MassPic.png" alt="profil" width="150">
                             <p class="nameMasseuses">Hans Olsen,</p>
                             <p class="massageType">CEO</p>
                         </div>
                         <div class="rightPicBox">
-                            <img src="img/MassPic.png" alt="profil" width="150">
+                            <img id = "massPic2" src="img/MassPic.png" alt="profil" width="150">
                             <p class="nameMasseuses">Ole Hansen,</p>
                             <p class="massageType">Back Massage</p>
                         </div>
                     </div>
                     <div class="divBorder">
                         <div class="leftPicBox">
-                            <img src="img/MassPic.png" alt="profil" width="150">
+                            <img id = "massPic3" src="img/MassPic.png" alt="profil" width="150">
                             <p class="nameMasseuses">Han Olsen,</p>
                             <p class="massageType">Full body massage</p>
                         </div>
                         <div class="rightPicBox">
-                            <img src="img/MassPic.png" alt="profil" width="150">
+                            <img id = "massPic4" src="img/MassPic.png" alt="profil" width="150">
                             <p class="nameMasseuses">Ol Hansen,</p>
                             <p class="massageType">Neck and leg massage</p>
                         </div>
@@ -53,7 +52,9 @@
             <div>
                 <h2>Our parlor</h2>
                 <div>
-                    <div id="imageCarousel"> </div>    <!--Denne skal benyttes av JS-->
+                    <div id="imageCarousel">
+                      <img id = "imgSlide" name = "slide">
+                    </div>    <!--Denne skal benyttes av JS-->
                     <p id ="imageCarouselText">Our room</p>
                 </div>
                 <div class="Address">
@@ -79,6 +80,9 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
             async>
         </script>
+          <script src="script/gallery_carousel.js"></script>
+          <script src="script/map.js"></script>
+          <script src="script/pic_hover_effect.js"></script>
         </body>
 
 </html>
