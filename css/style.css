@@ -161,8 +161,7 @@ video {
   max-width:50%;
 }
 #priceList .greenButton{
-  box-shadow: 0px 4px 8px #000000;
-  margin-left: 45%;
+  margin-left: 65%;
   margin-top: -3em;
   display: block;
 }
@@ -280,9 +279,10 @@ form{
 
 /*---------styling for about_us.html-----------*/
 #about{
-    background-image: url("../img/tree_breeze_Moment\ -\ Copy.jpg");
+    background-image: url("../img/tree_breeze_Moment.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 #AboutUs   {
@@ -327,8 +327,8 @@ form{
     margin-bottom: 15%;
 }
 
-#imageCarousel{
-    width:38.5vw;
+#imgSlide{
+    width:auto;
     height:45vh;
 }
 
@@ -349,8 +349,8 @@ form{
 
 #map{
     flex:10%;
-    width: 100vw;
-    height: 30vh;
+    width: 60px;
+    height: 180px;
     margin-left: 10%;
 }
 .contactInfo{
