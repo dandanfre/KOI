@@ -106,6 +106,7 @@ video{
 }
 
 #arrow {
+  width: 30pt;
   position: absolute;
   top: 90%;
   left: 50%;
