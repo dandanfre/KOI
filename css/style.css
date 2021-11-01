@@ -62,6 +62,45 @@ h3{
 
 /*----------------------index.html el. styling -------------------------*/
 
+#treeVideo {
+  opacity: 1;
+  -webkit-animation: opacity 5s ease-in;
+  -moz-animation: opacity 5s ease-in;
+  -ms-animation: opacity 5s ease-in;
+  -o-animation: opacity 5s ease-in;
+  animation: opacity 5s ease-in;
+  animation-name: fadeIn;
+}
+
+#treeVideo.fade-in {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
 video{
     width: 100%;
 }
