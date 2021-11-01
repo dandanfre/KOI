@@ -150,6 +150,28 @@ video {
   }
 }
 
+#expansionArrow{
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-bottom: -2%;
+  background-image: url("../img/expand_arrow.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 40px;
+  height:30px;
+  cursor: pointer;
+  border:none;
+}
+
+#expandedTreatments{
+  display: none;/* !important;
+  /*position: absolute;
+  visibility:hidden;
+  display:none;*/
+  max-height: 0;
+  transition: max-height 1s ease-out;
+}
+
 #ourTreatments, #forBusinesses{
   display: flex;
   flex-direction: row;
