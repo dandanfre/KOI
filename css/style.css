@@ -62,6 +62,7 @@ h3{
 
 /*----------------------index.html el. styling -------------------------*/
 
+
 #treeVideo {
   opacity: 1;
   -webkit-animation: opacity 5s ease-in;
@@ -114,7 +115,7 @@ video{
 }
 
 #arrow {
-  width: 30pt;
+  width: 40px;
   position: absolute;
   top: 90%;
   left: 50%;
@@ -124,15 +125,17 @@ video{
   size: auto;
 }
 
-video{
-    width: 100%;
-
-}
 
 #landingPage {
   position: relative;
-  height:100vh;
-  margin-bottom: 10%;
+}
+
+#logoBig {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
 }
 
 #treeImage {
@@ -158,10 +161,14 @@ video {
   background-color: transparent;
   background-repeat: no-repeat;
   width: 40px;
-  height:30px;
+  height: 30px;
   cursor: pointer;
   border:none;
 }
+
+
+
+
 
 #expandedTreatments{
   display: none;/* !important;
@@ -172,10 +179,40 @@ video {
   transition: max-height 1s ease-out;
 }
 
-#ourTreatments, #forBusinesses{
+
+.treatmentCategory{
+  margin-left:10%;
+}
+
+.treatmentCategory h3{
+  width:16ch;
+  height: 3%;
+}
+
+#ourTreatments, #forBusinesses,.treatmentCategory{
   display: flex;
   flex-direction: row;
 }
+
+.treatmentTxt_container{
+  flex:60%;
+  padding: 5%;
+  padding-right: 20%;
+  margin-left: 2%;
+  }
+
+.treatment_IMG_h3_container{
+  flex: 10%;
+}
+
+.treatmentIMG{
+  width:20vw;
+  height:30vh;
+  margin-top:5%;
+  object-fit: cover;
+}
+
+
 
 #ourTreatmentsText, #forBusinessesText{
   flex: 120%;
@@ -304,7 +341,12 @@ form .greenButton {
     float: right;
 }
 
-/*-----Styling common-el. in book.html + contact_us.html ends here------*/
+
+#bookForm input:not(.greenButton):valid, #contactForm input:not(.greenButton):valid{   
+  border: 2px solid #77b160;
+}
+
+
 
 /*-------------------contact_us.html el. styling -----------------------*/
 #contactUs {
