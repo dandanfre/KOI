@@ -12,44 +12,83 @@
     <div id ="navbar"><!--Leave empty--></div>
 
       <div id = "landingPage">
-        <div id = "image_element">
-            <video preload="auto" autoplay muted loop poster="img/tree_breeze.png" id = "treeVideo">
-            <source src="videos/tree_breeze.mp4" type="video/mp4">
-            <source src="videos/tree_breeze.mp4" type="video/webm">
-            <source src="videos/tree_breeze.mp4" type="video/ogv">
-            </video>
-
-            <img id = "treeImage" src="img/tree_breeze_Moment.jpg" alt="Cherry tree"/>
-        </div>
+          <video autoplay muted loop poster="img/tree_breeze.png">
+          <source src="videos/tree_breeze.mp4" type="video/mp4">
+          <source src="videos/tree_breeze.mp4" type="video/webm">
+          <source src="videos/tree_breeze.mp4" type="video/ogv">
+          </video>
 
           <img src="img/LogoKoi.png" alt="Koi Massasje" id="logoBig" />
-        
-          <a href="#ourTreatments"><img id ="arrow" src ="img/arrow.png" alt="Arrow pointing down"></a>
+
+          <img id = "treeImage" src="img/tree_breeze_Moment.jpg" alt="Cherry tree"/>
       </div>
-
       <div id="ourTreatmentsBack">
-
         <div id = "ourTreatments">
-
                 <div id = "ourTreatmentsImgDiv">
                     <img id = "ourTreatmentsImg" src="img/massage_back.jpg" alt="Back massage"/>
                 </div>
-
                 <div id = "ourTreatmentsText">
                     <h2>Our treatments</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad! </p>
                 </div>
         </div>
-
-        <button class = "greenButton">Book</button>
-      </div>
+        <div id = "expandedTreatments">
+                <div class="treatmentCategory">
+                    <div class="treatment_IMG_h3_container">
+                        <h3>Neck Massage</h3>
+                        <img class ="treatmentIMG" id ="neckMassage" src="img/massage_neck.jpg" alt="Neck Massage" width=250 height=200 />
+                    </div>
+                    <div class = "treatmentTxt_container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="treatmentCategory">
+                    <div class="treatment_IMG_h3_container">
+                        <h3>Back Massage</h3>
+                        <img class ="treatmentIMG" id ="backMassage" src="img/massage_back.jpg" alt="Back Massage" width=250 height=200 />
+                    </div>
+                    <div class = "treatmentTxt_container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="treatmentCategory">
+                    <div class="treatment_IMG_h3_container">
+                        <h3>Upper Body Massage</h3>
+                        <img class ="treatmentIMG" id ="upperBodyMassage" src="img/massage_upperbody.jpg" alt="Upper Body Massage" width=250 height=200 />
+                    </div>
+                    <div class = "treatmentTxt_container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="treatmentCategory">
+                    <div class="treatment_IMG_h3_container">
+                        <h3>Lower Massage</h3>
+                        <img class ="treatmentIMG" id ="lowerBodyMassage" src="img/massaage_lowerbody.jpg" alt="Lower Body Massage" width=250 height=200 />
+                    </div>
+                    <div class = "treatmentTxt_container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+                <div class="treatmentCategory">
+                    <div class="treatment_IMG_h3_container">
+                        <h3>Full Body Massage</h3>
+                        <img class ="treatmentIMG" id ="FullBodyMassage" src="img/massage_full.PNG" alt="Full Body Masasge" width=250 height=200 />
+                    </div>
+                    <div class = "treatmentTxt_container">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </div>
+        </div>
+        <button class = "greenButton" onclick="location.href='book.html'">Book</button>
+        <button id="expansionArrow" onclick="toggleTreatments()"></button>
+        </div>
 
           <div id="forBusinesses">
 
               <div id= "forBusinessesText">
                   <h2>For businesses</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat a commoda commodo consequat. Duis aute irure dolor in rep</p>
-                  <button class = "greenButton">Contact us</button>
+                  <button class = "greenButton" onclick="location.href='contact_us.html'">Contact us</button>
               </div>
 
               <div id = "forBusinessesImgDiv">
@@ -64,26 +103,27 @@
                   <li>
                       <h3>Full body</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-                      <button class = "greenButton">Book for 950,-</button>
+                      <button class = "greenButton" onclick="location.href='book.html'">Book for 950,-</button>
                   </li>
                   <li>
                       <h3>Extra legs</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-                    <button class = "greenButton">Book for 300,-</button>
+                    <button class = "greenButton" onclick="location.href='book.html'">Book for 300,-</button>
                   </li>
                   <li>
                       <h3>Only back</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
-                      <button class = "greenButton">Book for 550,-</button>
+                      <button class = "greenButton" onclick="location.href='book.html'">Book for 550,-</button>
                   </li>
                   <li>
                     <h3>Package deal</h3>
                     <p>Ask for a package of 10 on your next visit, and get a 10% discount </p>
-                    <button class = "greenButton">Book</button>
+                    <button class = "greenButton" onclick="location.href='book.html'">Book</button>
                     </li>
               </ul>
           </div>
 
       <div id ="footer"><!--Leave empty--></div>
+      <script src="script/arrow_hidden_box.js"></script>
   </body>
 </html>
