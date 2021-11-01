@@ -105,6 +105,16 @@ video{
     width: 100%;
 }
 
+#arrow {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+  size: auto;
+}
+
 #landingPage {
   position: relative;
 }
