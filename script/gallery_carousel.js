@@ -2,10 +2,10 @@ var i = 0;
 var images  = [];
 var time = 3000;
 
-images[0] = "img/incence.jpg";
-images[1] = "img/LogoKoi.png";
-images[2] = "img/incence.jpg";
-images[3] = "img/LogoKoi.png";
+images[0] = "img/ourRoom/bathtub.jpg";
+images[1] = "img/ourRoom/chair.jpg";
+images[2] = "img/ourRoom/garden.jpg";
+images[3] = "img/ourRoom/stairs.jpg";
 
 function changeImage() {
   document.slide.src = images[i];
