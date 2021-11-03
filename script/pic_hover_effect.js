@@ -14,7 +14,7 @@ massPic1.addEventListener("mouseout", setOldImage);
 const massPic2= document.getElementById("massPic2")
 
 function setNewImage2(){
-    massPic2.src ="img/daniel1.png";
+    massPic2.src ="img/eline2.png";
 }
 
 function setOldImage2(){
