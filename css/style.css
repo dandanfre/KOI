@@ -1,10 +1,12 @@
+/*----Element styling for elements across all html-pages-----*/
 body{
     font-family: degular,Verdana, sans-serif;
     font-style: normal;
     font-size: 24px;
     font-weight: 300;
     background-color: #222222;
-    color: white
+    color: white;
+    margin: 0px;
 }
 
 /*common attr. for h1-h3*/
@@ -29,11 +31,11 @@ h2{
 }
 h3{
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 0.25;
-    text-decoration: underline;
 }
 
+/*--------Call to action button--------*/
 .greenButton {
     background-color: #678D58;
     color: #FFFFFF;
@@ -68,7 +70,7 @@ h3{
 
 /*----------------------index.html el. styling -------------------------*/
 
-
+/*-------For video element and KOI logo hovering over it*/
 #treeVideo {
   opacity: 1;
   -webkit-animation: opacity 5s ease-in;
@@ -158,7 +160,7 @@ video {
   width: 100%;
   }
 }
-
+/*----For elements used in arrow_hidden_box expanding additional info*/
 #expansionArrow{
   margin-left: 50%;
   margin-right: 50%;
@@ -171,9 +173,6 @@ video {
   cursor: pointer;
   border:none;
 }
-
-
-
 
 
 #expandedTreatments{
@@ -219,7 +218,6 @@ video {
 }
 
 
-
 #ourTreatmentsText, #forBusinessesText{
   flex: 120%;
 }
@@ -238,6 +236,8 @@ video {
   bottom: 7.5%;
 }
 
+
+/*----Business section-----*/
 #forBusinessesImg{
   width: 80%;
   height: 80%;
@@ -294,7 +294,7 @@ video {
   padding-bottom: 5%;
 }
 
-/*-----Styling common-el. in book.html + contact_us.html------*/
+/*-----Styling common-elements for book.html + contact_us.html------*/
 #message,.name, #treatment, .phoneNumber, #date,.email, #time, #subject{
     background-color: #FCEAC6;
     color: #222222;
@@ -352,9 +352,13 @@ form .greenButton {
   border: 2px solid #77b160;
 }
 
+#contactUs select, #bookForm select{
+  text-align: center;
+}
 
 
-/*-------------------contact_us.html el. styling -----------------------*/
+
+/*-------------------contact_us.html-----------------------*/
 #contactUs {
   width: 100%;
   background-color: #FCEAC6;
@@ -390,7 +394,6 @@ form .greenButton {
     width: 100%;
   }
 
-
 form{
     padding: 10%;
     padding-left: 10%;
@@ -404,7 +407,7 @@ form{
     color: #FCEAC6;
 }
 
-/*---------styling for about_us.html-----------*/
+/*---------about_us.html-----------*/
 #about{
     background-image: url("../img/tree_breeze_Moment.jpg");
     background-repeat: no-repeat;
@@ -455,7 +458,7 @@ form{
 }
 
 #imgSlide{
-    width:auto;
+    width:39vw;
     height:45vh;
 }
 
