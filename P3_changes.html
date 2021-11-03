@@ -6,6 +6,7 @@
         <link rel="stylesheet"
         href="css/p3_style.css"
         type ="text/css"/>
+        <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     <body> 
         <div>
@@ -32,19 +33,26 @@
                 <p class ="essay">The changes that have been made are listed down below.
                     The descriptions are divided into changes regarding the four html-files we have implemented, followed by 
                     changes that have been applied to the JavaScript-files, and finally, major changes in the CSS.
-                <b>Detailed description and justify all substantive changes!!!</b></p>
-                <h2>Content</h2>
-                <br>
+                </p>
+
                 <h3>Index.html</h3>
-                <p class="essay">
+                <p class="essay">Under the "price" section, at the bottom of index.html, we added a description for every treatment listed. In addition to the description,
+                    buttons were added to each treatment to fullfill the functional-requirement for available Call-to-action-buttons at each page.
+                    The arrow below the KOI-logo at the top of index.html, ended up being static and consists off one arrow.
+                    Lastly, we swapped the pictures in "Our Treatments" section. In P2 the picture was a bare back with stones on it. Now the picture has been changed to hands with oil. 
                     <br>
                 </p>
                 <h3>About_us.html</h3>
                 <p class="essay">
+                    This page does not have five masseuses as planned in the section “Our masseuses”, we have only four. This because it looks better with symmetry and
+                    gives the user some sense of order and clean design.
                     <br>
                 </p>
                 <h3>Contact_us.html</h3>
-                <p class="essay">
+                <p class="essay"> Not many changes were made to this site. But we chose to make examples of what the user
+                    should write in the input fields with a light grey color to make it intuitively and easy to understand.
+                    We changed the "Text" input to "Message" because this is what the user actully is going to write in. We
+                    also added a green line around the input fields when typing in correct information.
                     <br>
                 </p>
                 <h3>Book.html</h3>
@@ -67,7 +75,7 @@
                         <li>II. A JavaScript function to make a micro animation of arrow pointing downwards in the index page to signify that there is more content on the page</li>
                     </ul>
                 </p>
-                <p class="essay"><b>Changes to 1st required .js:</b>
+                <p class="essay"><b>Changes to 1st required book_feedback.js:</b>
                      The JavaScript function for a fake "booking submitted”-message" when booking a treatment
                      have not gone through major changes. The only time this function is triggered is when the user have
                      filled out all the required fields (all fields) of the forms.
@@ -75,24 +83,43 @@
                     
                     <br>
                 </p>
-                <p class="essay"><b>Changes to 2nd required .js:</b>
+                <p class="essay"><b>Changes to 2nd required index_vid_effect.js:</b>
+                    As mentioned above, this was written in CSS. Therefor the js function has been discarded.
                     <br>
                 </p>
-                <p class="essay"><b>Changes to 3rd required .js:</b>
+                <p class="essay"><b>Changes to 3rd required anim_index_arrow.js:</b>
+                    As mentioned above, this was written in CSS. Therefor the js function has been discarded.
                     <br>
                 </p>
-                <p class="essay"><b>Changes to 4th required .js:</b>
+                <p class="essay"><b>Changes to 4th required gallery_carousel.js:</b>
+                    No changes were made.
+                    <br>
+                </p>
+                <p class="essay"><b>Changes to 5th pic_hover_effect.js:</b>
+                    No changes were made.
+                    <br>
+                </p>
+                <p class="essay"><b>Changes to 6th required arrow_hidden_box.js:</b>
                      A JavaScript function to collaps and expand box-element with information in the our treatments segment. 
                      This javascript-function was listed as the 6th required .js. It has been changed to be the 4th required .js.
                      In addition to the implementation of the function in JavaScript, some additional html and css-styling was necessary in order to realise the js-function.
                      A certain div was filled out in html and styled to be displayed as none. Clicking on the button with the picture of an arrow, resulted in displaying the div with its contents(elements).
                     <br>
                 </p>
-                <p class="essay"><b>Additional JavaScript-file, Google-api:</b>
+                <p class="essay"><b>Additional JavaScript-file map.js:</b>
+                    We hadn’t thought of what the google maps function on this site would be written in. So google maps is a java script application. 
+                    <br>
+                </p>
+
+                <p class="essay"><b>Additional JavaScript-file contact_feedback.js:</b>
+                    We added a "message-sent"-message when the user has sent in a message, to let them know it was successfully sent. This is similar to the message
+                    that comes up when you have booked a treatment.
                     <br>
                 </p>
 
                 <p class="essay"><b>Modularity Requirement:</b>
+                    We fulfilled the modularity requirements by using JavaScript. navbar_footer_modularity.js was used to make the navbar and the footer. This was included in each page in one div for the navbar and one div for the footer.
+                    We made one stylesheet named style.css that was used to style the whole website. 
                     <br>
                 </p>
                 <hr>
@@ -100,7 +127,7 @@
         </div>
         <div>
             <section>
-                <h2>Inidivdual effort</h2>
+                <h2>Individual effort</h2>
                 <p class ="essay">Everyone did their part during implementation of KOI website. If one of us 
                     was unsure about how to implement the code, we helped each other out.
                     See rest in the "Final Work division"- table at the bottom of this document. 
@@ -159,14 +186,12 @@
                                     <li>stairs.jpg</li>
                                 </ul>
                             </li>
-                            <li>
-                                <b>treatment/</b>
-                                <li>massage_neck</li>
-                                <li>massage_back</li>
-                                <li>massage_upperbody</li>
-                                <li>massage_lowerbody</li>
-                                <li>massage_fullbody</li>
-                            </li>
+                            
+                            <li>massage_neck</li>
+                            <li>massage_back</li>
+                            <li>massage_upperbody</li>
+                            <li>massage_lowerbody</li>
+                            <li>massage_fullbody</li>
                             <li>expand_arrow.png</li>
                             <li>favicon.png</li>
                             <li>LogoKoi.png</li>
@@ -235,7 +260,7 @@
                         <tr>
                             <td>gallery_carousel.js</td>
                             <td>Script randomizing gallery preview</td>
-                            <td>Celine. N.H.</td>
+                            <td>Celine. H.N.</td>
                         </tr>
                         <tr>
                             <td>pic_hover_effect.js</td>
@@ -245,6 +270,11 @@
                         <tr>
                             <td>navbar_footer_modularity.js</td>
                             <td>adds navbar and footer without extra code</td>
+                            <td>Khai</td>
+                        </tr>
+                        <tr>
+                            <td>LogoKoi.png</td>
+                            <td>Logo for the site</td>
                             <td>Khai</td>
                         </tr>
                     </tbody>

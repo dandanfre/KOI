@@ -7,6 +7,7 @@
         href="css/style.css"
         type ="text/css"/>
         <link rel="stylesheet" href="https://use.typekit.net/xze3gie.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     <body id="about">
         <div id ="navbar"><!--Leave empty--></div>
@@ -24,24 +25,24 @@
 
                     <div class="divBorder">
                         <div class="leftPicBox">
-                            <img id = "massPic1" src="img/daniel1.png" alt="profil" width="150">
+                            <img id = "massPic1" src="img/people/daniel1.png" alt="profil" width="150">
                             <p class="nameMasseuses">Hans Olsen,</p>
                             <p class="massageType">CEO</p>
                         </div>
                         <div class="rightPicBox">
-                            <img id = "massPic2" src="img/celine1.png" alt="profil" width="150">
+                            <img id = "massPic2" src="img/people/celine1.png" alt="profil" width="150">
                             <p class="nameMasseuses">Ole Hansen,</p>
                             <p class="massageType">Back Massage</p>
                         </div>
                     </div>
                     <div class="divBorder">
                         <div class="leftPicBox">
-                            <img id = "massPic3" src="img/ida1.png" alt="profil" width="150">
+                            <img id = "massPic3" src="img/people/ida1.png" alt="profil" width="150">
                             <p class="nameMasseuses">Han Olsen,</p>
                             <p class="massageType">Full body massage</p>
                         </div>
                         <div class="rightPicBox">
-                            <img id = "massPic4" src="img/khai1.png" alt="profil" width="150">
+                            <img id = "massPic4" src="img/people/khai1.png" alt="profil" width="150">
                             <p class="nameMasseuses">Ol Hansen,</p>
                             <p class="massageType">Neck and leg massage</p>
                         </div>
@@ -53,7 +54,7 @@
                 <h2>Our parlor</h2>
                 <div>
                     <div id="imageCarousel">
-                      <img id = "imgSlide" name = "slide">
+                      <img id = "imgSlide" name = "slide" alt="image slide show" src="img/atmosphere/bathtub.jpg">
                     </div>    <!--Denne skal benyttes av JS-->
                     <p id ="imageCarouselText">Our room</p>
                 </div>
@@ -76,8 +77,11 @@
         </div>
 
         <div id ="footer"><!--Leave empty--></div>
+        <!--Google maps API is only displayed when billing information is displayed.
+        See https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&utm_medium=degraded&utm_campaign=billing#api-key-and-billing-errors
+        for more information-->
         <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
             async>
         </script>
           <script src="script/gallery_carousel.js"></script>
