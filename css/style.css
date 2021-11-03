@@ -19,6 +19,28 @@ h1, h2{
     font-weight: 400;
 }
 
+/*Styling header og footer.*/
+.navbar{
+  background-color: #222222;
+  height: 137px; 
+  width: 100%;  
+  display: flex;
+  align-items: center;
+}
+
+.navBarLinks{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+  /*gap: 30px*/
+
+}
+.navBarLink{
+  color: white;
+  text-decoration: none;
+}
+
 /*Styling for inividual header-el.*/
 h1{
     margin: auto;
@@ -124,7 +146,6 @@ video{
   cursor: pointer;
   size: auto;
 }
-
 
 #landingPage {
   position: relative;
