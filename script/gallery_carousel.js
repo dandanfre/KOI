@@ -2,12 +2,13 @@ var i = 0;
 var images  = [];
 var time = 3000;
 
-images[0] = "img/ourRoom/bathtub.jpg";
-images[1] = "img/ourRoom/chair.jpg";
-images[2] = "img/ourRoom/garden.jpg";
-images[3] = "img/ourRoom/stairs.jpg";
+images[0] = document.getElementById('imgSlide').src='img/atmosphere/bathtub.jpg';
+images[1] = document.getElementById('imgSlide').src='img/atmosphere/chair.jpg';
+images[2] = document.getElementById('imgSlide').src='img/atmosphere/light.jpg';
+images[3] = document.getElementById('imgSlide').src='img/atmosphere/stairs.jpg';
 
 function changeImage() {
+  
   document.slide.src = images[i];
 
   if ( i < images.length - 1){
