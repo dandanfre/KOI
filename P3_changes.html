@@ -4,7 +4,7 @@
         <title>P3 Design Changes</title>
         <meta charset="utf-8" />
         <link rel="stylesheet"
-        href="css/p2.css"
+        href="css/p3_style.css"
         type ="text/css"/>
     </head>
     <body> 
@@ -49,10 +49,30 @@
                 </p>
                 <h3>Book.html</h3>
                 <p class="essay">
+                    The major changes we did to the booking form was using small arrows instead of the big ones that are displayed in the prototype for book.html, in P2.
+                    In addition, placeholder text was added for the input- and select-fields to signify the user about format of the input.
+                    Placeholders have been implemented in order to assist users filling out the correct information in the form.
+                    Lastly we added green-border effects to signify correct input. This way users can go on to the next field.
+                    The implementation of red borders for wrong input have been discarded due to the fact that the correct format of input information have aldready been provided by placeholders,
+                    keeping the information to a minimum, but yet effective. The final version of the book.html landed on the MVP-version of the form. The ideal-version will have to wait for a revisit in the future.
                     <br>
                 </p>
                 <br>
+                <h3>General changes to JavaScript</h3>
+                <p class="essay">
+                    In P2 we listed 6 different js-applications for maintaining a functional website, where some off them were discarded for the website.
+                    We did this due to an easier and more effective implementation in CSS. The javascript-functions that were discarded are the:
+                    <ul>
+                        <li>I. A JavaScript function to make the video on our landing page fade in when the user enters the page.</li>
+                        <li>II. A JavaScript function to make a micro animation of arrow pointing downwards in the index page to signify that there is more content on the page</li>
+                    </ul>
+                </p>
                 <p class="essay"><b>Changes to 1st required .js:</b>
+                     The JavaScript function for a fake "booking submitted”-message" when booking a treatment
+                     have not gone through major changes. The only time this function is triggered is when the user have
+                     filled out all the required fields (all fields) of the forms.
+                     The same function, but with another name was implemented for the contact-form in contact_us.html, and with another message. 
+                    
                     <br>
                 </p>
                 <p class="essay"><b>Changes to 2nd required .js:</b>
@@ -62,6 +82,10 @@
                     <br>
                 </p>
                 <p class="essay"><b>Changes to 4th required .js:</b>
+                     A JavaScript function to collaps and expand box-element with information in the our treatments segment. 
+                     This javascript-function was listed as the 6th required .js. It has been changed to be the 4th required .js.
+                     In addition to the implementation of the function in JavaScript, some additional html and css-styling was necessary in order to realise the js-function.
+                     A certain div was filled out in html and styled to be displayed as none. Clicking on the button with the picture of an arrow, resulted in displaying the div with its contents(elements).
                     <br>
                 </p>
                 <p class="essay"><b>Additional JavaScript-file, Google-api:</b>
@@ -100,13 +124,14 @@
                         </ul>
                     </li>
                     <li>
-                        JavaScript/
+                        script/
                         <ul>
+                            <li>arrow_hidden_box.js</li>
                             <li>book_feedback.js</li>
-                            <li>index_vid_effect.js</li>
-                            <li>anim_ndex_arrow_effect.js</li>
+                            <li>contact_feedback.js</li>
                             <li>gallery_carousel.js</li>
                             <li>pic_hover_effect.js</li>
+                            <li>map.js</li>
                         </ul>
                     </li>
                     <li>img/
@@ -114,28 +139,43 @@
                             <li>
                                 <b>people/</b>
                                 <ul>
-                                    <li>owner/founder</li>
-                                    <li>masseur1</li>
-                                    <li>masseur2</li>
-                                    <li>masseur3</li>
-                                    <li>masseur4</li>
+                                    <li>celine1.png</li>
+                                    <li>celine2.png</li>
+                                    <li>daniel1.png/li>
+                                    <li>daniel2.png</li>
+                                    <li>ida1.png</li>
+                                    <li>ida2.png</li>
+                                    <li>khai1.png</li>
+                                    <li>khai2.png</li>
                                 </ul>
                             </li>
                             <li>
-                                <b>atmosphere/treament/</b>
+                                <b>atmosphere/</b>
                                 <ul>
-                                    <li>pic1</li>
-                                    <li>pic2</li>
-                                    <li>pic3</li>
-                                    <li>pic4</li>
+                                    <li>bathtub.png</li>
+                                    <li>chair.png</li>
+                                    <li>incence.jpg</li>
+                                    <li>light.jpg</li>
+                                    <li>stairs.jpg</li>
                                 </ul>
                             </li>
+                            <li>
+                                <b>treatment/</b>
+                                <li>massage_neck</li>
+                                <li>massage_back</li>
+                                <li>massage_upperbody</li>
+                                <li>massage_lowerbody</li>
+                                <li>massage_fullbody</li>
+                            </li>
+                            <li>expand_arrow.png</li>
                             <li>favicon.png</li>
+                            <li>LogoKoi.png</li>
+                            <li>tree_breeze_Moment.jpg</li>
                         </ul>
                     </li>
-                    <li>vid/
+                    <li>videos/
                         <ul>
-                            <li>koi_fish.mp4</li>
+                            <li>tree_breeze.mp4</li>
                         </ul>
                     </li>
                 </ul>
@@ -159,8 +199,8 @@
                     <tbody>
                         <tr>
                             <td>index.html</td>
-                            <td>Landing Page + info about our tretments</td>
-                            <td>Ida M.</td>
+                            <td>Landing Page + info about our treatments</td>
+                            <td>Ida M. + Daniel</td>
                         </tr>
                         <tr>
                             <td>about_us.html</td>
@@ -180,26 +220,16 @@
                         <tr>
                             <td>style.css</td>
                             <td>Styling for all pages</td>
-                            <td>Shared Effort/Khai & Daniel</td>
+                            <td>Shared effort</td>
                         </tr>
                         <tr>
-                            <td>book_feedback.js</td>
-                            <td>Script for displaying sent request </td>
+                            <td>book/contact_feedback.js</td>
+                            <td>Script for displaying fake request </td>
                             <td>Daniel</td>
                         </tr>
                         <tr>
-                            <td>index_vid_effect.js</td>
-                            <td>Fade effect for video on landing page</td>
-                            <td>Ida M.</td>
-                        </tr>
-                        <tr>
-                            <td>anim_index_arrow.js</td>
-                            <td>A simple effect to indicate homepage button</td>
-                            <td>Ida M.</td>
-                        </tr>
-                        <tr>
                             <td>arrow_hidden_box.js</td>
-                            <td>Opens a hidden element containing additional information about our treatments</td>
+                            <td>Opens(expands) a hidden element containing additional information about our treatments</td>
                             <td>Daniel</td>
                         </tr>
                         <tr>
