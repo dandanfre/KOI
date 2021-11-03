@@ -4,7 +4,8 @@ body{
     font-size: 24px;
     font-weight: 300;
     background-color: #222222;
-    color: white
+    color: white;
+    margin: 0px;
 }
 
 /*common attr. for h1-h3*/
@@ -26,6 +27,7 @@ h1, h2{
   width: 100%;  
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .navBarLinks{
