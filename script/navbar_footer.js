@@ -23,9 +23,9 @@ footer.innerHTML=`
     <div id="socialMedia" class="footerElement">
         <h3>Social Media</h3>
         <div id="socialMediaList">
-            <img src="img/instagram.png" alt="instagram">
-            <img src="img/instagram.png" alt="Facebook">
-            <img src="img/instagram.png" alt="LinkedIn">
+            <img src="img/instagram.png" alt="instagram" class="socialMediaIcon">
+            <img src="img/instagram.png" alt="Facebook" class="socialMediaIcon">
+            <img src="img/instagram.png" alt="LinkedIn" class="socialMediaIcon">
         </div> 
     </div>
     <div id="webDesign" class="footerElement">

@@ -67,13 +67,19 @@ font-weight: 600;
 .footerElement{
   display: flex;
   flex-direction: column;
+  
 }
 #socialMediaList{
   display: flex; 
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 10px
 }
 
+.socialMediaIcon{
+  width:32px; 
+  height: 32px; 
+}
 /*Styling for inividual header-el.*/
 h1{
     margin: auto;
