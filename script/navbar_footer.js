@@ -17,8 +17,8 @@ footer.innerHTML=`
 <div class="footer">
     <div id="contactInfoFooter" class="footerElement">
         <h3>Contact us</h3>
-        <p>phone: +4790909090</p>
-        <p>email: contact@koi.no</p>
+        <p2>phone: +4790909090</p2>
+        <p2>email: contact@koi.no</p2>
     </div>
     <div id="socialMedia" class="footerElement">
         <h3>Social Media</h3>
@@ -30,16 +30,19 @@ footer.innerHTML=`
     </div>
     <div id="webDesign" class="footerElement">
         <h3>Web design</h3>
-        <p>Celine Borge Byrkjeland</p>
-        <p>Daniel Fremming</p>
-        <p>Khai Sigve Nguyen Litleskare</p>
-        <p>Ida Marie Mauseth</p>
-        <p>Celine Hogenstand Nilsen</p>
+        <p2>Celine Borge Byrkjeland</p2>
+        <p2>Daniel Fremming</p2>
+        <p2>Khai Sigve Nguyen Litleskare</p2>
+        <p2>Ida Marie Mauseth</p2>
+        <p2>Celine Hogenstand Nilsen</p2>
     </div>
     <div id="visitUsFooter" class="footerElement">
         <h3>Visit us</h3>
+        <p2>Address:</p2>
+        <p2>Bassenbakken 4,</p2>
+        <p2>Trondheim</p2>
     </div>
-    <div id="footerMap" class="footerElement>
+    <div id="footerMap" class="footerElement">
         <h3>Her kommer et kart</h3> 
     </div> 
 
