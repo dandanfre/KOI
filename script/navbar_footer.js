@@ -23,6 +23,9 @@ footer.innerHTML=`
     <div id="socialMedia" class="footerElement">
         <h3>Social Media</h3>
         <div id="socialMediaList">
+            <img src="img/instagram.png" alt="instagram">
+            <img src="img/instagram.png" alt="Facebook">
+            <img src="img/instagram.png" alt="LinkedIn">
         </div> 
     </div>
     <div id="webDesign" class="footerElement">
@@ -33,5 +36,11 @@ footer.innerHTML=`
         <p>Ida Marie Mauseth</p>
         <p>Celine Hogenstand Nilsen</p>
     </div>
-    <div id="visitUsFooter" class="footerElement"></div>
+    <div id="visitUsFooter" class="footerElement">
+        <h3>Visit us</h3>
+    </div>
+    <div id="footerMap" class="footerElement>
+        <h3>Her kommer et kart</h3> 
+    </div> 
+
 </div>`

@@ -68,6 +68,11 @@ font-weight: 600;
   display: flex;
   flex-direction: column;
 }
+#socialMediaList{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 /*Styling for inividual header-el.*/
 h1{
