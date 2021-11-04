@@ -30,17 +30,43 @@ h1, h2{
   border-bottom: 1px solid #c4c4c4;
 }
 
-.navBarLinks{
+.navbarLinks{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  font-weight: 400;
+  font-size: 26px;
   
   /*gap: 30px*/
 
 }
-.navBarLink{
+.navbarLink{
   color: white;
   text-decoration: none;
+}
+
+.navbarLink:hover{
+font-weight: 600;
+}
+
+.navbarLink:active{
+  text-decoration: underline;
+  }
+
+.footer{
+  width: 100%; 
+  height: 200px; 
+  background-color: #222222;
+  border-top: 1px solid #c4c4c4;
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-size: 24px;
+  font-weight: 300;
+}
+.footerElement{
+  display: flex;
+  flex-direction: column;
 }
 
 /*Styling for inividual header-el.*/
