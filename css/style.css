@@ -21,6 +21,13 @@ h1, h2{
     font-weight: 400;
 }
 
+/*attributes for h4*/
+h4{
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
 /*Styling header og footer.*/
 .navbar{
   background-color: #222222;
