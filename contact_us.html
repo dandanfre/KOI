@@ -8,26 +8,26 @@
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     <body>
-        <div id ="header"></div>
+        <div id ="header"><!--Leave empty--></div>
 
         <div id = "contactUs">
 
           <form id="contactForm">
 
             <label> Name </label><br>
-            <input class = "name"  type="text" name="name" required/>
+            <input class = "name"  type="text" name="name" placeholder="E.g. Your name" required/>
 
             <br>
 
             <div class = phoneAndEmail>
               <div class = "innerPhoneAndEmail">
                 <label> Phone number </label><br>
-                <input class = "phoneNumber" type="tel" name="phone_number" pattern="[0-9]{8}" required/>
+                <input class = "phoneNumber" type="tel" name="phone_number" pattern="[0-9]{8}" placeholder="E.g. 40107608" required/>
               </div>
 
               <div class = "innerPhoneAndEmail">
                 <label> Email </label><br>
-                <input class = "email" type="email" name="email" required/>
+                <input class = "email" type="email" name="email" placeholder="E.g. hello@gmail.com" required/>
               </div>
             </div>
 
@@ -55,10 +55,11 @@
         </form>
 
       </div>
-
       <div id ="footer"><!--Leave empty--></div>
       <script src="script/contact_feedback.js"></script>
       <script src="script/navbar_footer.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2" async> </script>
+      <script src="script/miniMap.js"></script>
     </body>
 
 </html>

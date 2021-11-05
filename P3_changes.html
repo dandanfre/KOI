@@ -23,7 +23,7 @@
                 <h2>The client/Administative Details</h2>
                 <p><b>Client name:</b> KOI</p>
                 <p><b>Website:</b> KOImassage</p>
-                <p><b>Link to website:</b> <link rel="stylesheet" href="" target=></p>
+                <p><b>Link to website:</b> <a rel="stylesheet" href="index.html" target="_blank"> Click here</a></p>
                 <hr>
             </section>
         </div>
@@ -39,13 +39,16 @@
                 <p class="essay">Under the "price" section, at the bottom of index.html, we added a description for every treatment listed. In addition to the description,
                     buttons were added to each treatment to fullfill the functional-requirement for available Call-to-action-buttons at each page.
                     The arrow below the KOI-logo at the top of index.html, ended up being static and consists off one arrow.
+                    Out of fear for users mistaking underlined headers for being buttons during the usability-testing, we styled h3 element from being underlined to having a font-weight of 600, so users do not make such mistakes.
+                    The update was applied to the h3 elements in the section for treatment categories, and the price list at the bottom.
                     Lastly, we swapped the pictures in "Our Treatments" section. In P2 the picture was a bare back with stones on it. Now the picture has been changed to hands with oil. 
                     <br>
                 </p>
                 <h3>About_us.html</h3>
                 <p class="essay">
                     This page does not have five masseuses as planned in the section “Our masseuses”, we have only four. This because it looks better with symmetry and
-                    gives the user some sense of order and clean design.
+                    gives the user some sense of order and clean design. We also deleted the "Our room" caption because this was unnecessary when we have "Our parlor" as
+                    a headline.
                     <br>
                 </p>
                 <h3>Contact_us.html</h3>
@@ -74,7 +77,7 @@
                         <li>I. A JavaScript function to make the video on our landing page fade in when the user enters the page.</li>
                         <li>II. A JavaScript function to make a micro animation of arrow pointing downwards in the index page to signify that there is more content on the page</li>
                     </ul>
-                </p>
+                
                 <p class="essay"><b>Changes to 1st required book_feedback.js:</b>
                      The JavaScript function for a fake "booking submitted”-message" when booking a treatment
                      have not gone through major changes. The only time this function is triggered is when the user have
@@ -92,11 +95,11 @@
                     <br>
                 </p>
                 <p class="essay"><b>Changes to 4th required gallery_carousel.js:</b>
-                    No changes were made.
+                    No changes were made, because our initial plan worked.
                     <br>
                 </p>
                 <p class="essay"><b>Changes to 5th pic_hover_effect.js:</b>
-                    No changes were made.
+                    No changes were made, because our initial plan worked.
                     <br>
                 </p>
                 <p class="essay"><b>Changes to 6th required arrow_hidden_box.js:</b>
@@ -106,8 +109,12 @@
                      A certain div was filled out in html and styled to be displayed as none. Clicking on the button with the picture of an arrow, resulted in displaying the div with its contents(elements).
                     <br>
                 </p>
-                <p class="essay"><b>Additional JavaScript-file map.js:</b>
-                    We hadn’t thought of what the google maps function on this site would be written in. So google maps is a java script application. 
+                <p class="essay"><b>Additional JavaScript-file map.js and miniMap.js:</b>
+                    Google provides a procedure for implementing their Google Maps API.
+                    This js-function was therefore not mentioned in the section for required js, since writing our own js-code for this implementation seemed undoable. 
+                    As for the working code, our implementation of the Google Maps API works only for Google Chrome, but not for every web browsers, e.g. Mozilla Firefox, Safari etc.
+                    The given requirement stated the website should be working in Google Chrome, hence we chose not to do any further implementation, and we did not have the capacity to do more.
+                    miniMap.js works the same way as map.js, but is for rendering Google Maps API in the footer-section.
                     <br>
                 </p>
 
@@ -118,7 +125,11 @@
                 </p>
 
                 <p class="essay"><b>Modularity Requirement:</b>
-                    We fulfilled the modularity requirements by using JavaScript. navbar_footer_modularity.js was used to make the navbar and the footer. This was included in each page in one div for the navbar and one div for the footer.
+                    We fulfilled the modularity requirements by using JavaScript. navbar_footer_modularity.js was used to make the navbar(id="header") and the footer(id="footer"). This was included in each page in one div for the navbar and one div for the footer.
+                    As for the design of navbar and footer, the navbar did not go through any major changes, other than not implementing underline for active site. The reason is because we felt this would be more of a distraction, than a helpful navigation signifier, but we will test this hypothesis during user-testing. 
+                    Footer: We made the text of the content thinner(weight: 200) and smaller(font-size: 20px) to make it fit better in the visual hierarchy.
+                    We also included a “map” header above the map to improve the universal design of the page. 
+
                     We made one stylesheet named style.css that was used to style the whole website. 
                     <br>
                 </p>
@@ -131,6 +142,27 @@
                 <p class ="essay">Everyone did their part during implementation of KOI website. If one of us 
                     was unsure about how to implement the code, we helped each other out.
                     See rest in the "Final Work division"- table at the bottom of this document. 
+                    <br><br>
+                    Celine B. B. fulfilled her minimum requirements from P2 and made about_us.html
+                    and pic_hover_effect.js. She also made map.js and styled about_us.html in CSS,
+                    with a little help from Daniel and Celine H. N.
+                    <br><br>
+                    Celine H. N. fulfilled her minimum requirements from P2 and made contact_us.html
+                    and gallery_carousel.js. She also styled contact_us.html in CSS, the green buttons
+                    and much of the styling on index.html.
+                    <br><br>
+                    Ida fulfilled her minimum requirements from P2. She made index.html, implemented the
+                    fade-in video-effect in CSS and styled the arrow on the index page in css as well.
+                    <br><br>
+                    Daniel fullfilled his minimum requirements from P2. He made the booking.html, styled it, and in addition to wrote some
+                    additional content for the div index.html for the implementing the arrow_hidden_box.js.
+                    He also wrote book_feedback.js, where the code was reused for contact_feedback.js.
+                    Lastly, he supervised that the correct files were added and controlled that the KOI-website worked properly before usability testing.
+                    <br><br>
+                    Khai fullfilled his minimum requirements from P2. He styled the necessary main elements
+                    for the website in CSS, which worked as foundation for the styling of the other html-pages. In addition, he did
+                    some styling for the navbar and footer which were generated by navbar_footer.js, which he also wrote.
+                    The navbar_footer.js fullfills the requirement for modularity.
                 </p>
                 <hr>
             </section>
@@ -157,25 +189,17 @@
                             <li>book_feedback.js</li>
                             <li>contact_feedback.js</li>
                             <li>gallery_carousel.js</li>
+                            <li>map.js</li>
+                            <li>miniMap.js</li>
+                            <li>navbar_footer.js</li>
                             <li>pic_hover_effect.js</li>
                             <li>map.js</li>
+                            <li>miniMap.js</li>
+                            <li>navbar_footer.js</li>
                         </ul>
                     </li>
                     <li>img/
                         <ul>
-                            <li>
-                                <b>people/</b>
-                                <ul>
-                                    <li>celine1.png</li>
-                                    <li>celine2.png</li>
-                                    <li>daniel1.png/li>
-                                    <li>daniel2.png</li>
-                                    <li>ida1.png</li>
-                                    <li>ida2.png</li>
-                                    <li>khai1.png</li>
-                                    <li>khai2.png</li>
-                                </ul>
-                            </li>
                             <li>
                                 <b>atmosphere/</b>
                                 <ul>
@@ -186,15 +210,27 @@
                                     <li>stairs.jpg</li>
                                 </ul>
                             </li>
-                            
-                            <li>massage_neck</li>
-                            <li>massage_back</li>
-                            <li>massage_upperbody</li>
-                            <li>massage_lowerbody</li>
-                            <li>massage_fullbody</li>
+                            <li>
+                                <b>people/</b>
+                                <ul>
+                                    <li>celine1.png</li>
+                                    <li>celine2.png</li>
+                                    <li>daniel1.png</li>
+                                    <li>daniel2.png</li>
+                                    <li>ida1.png</li>
+                                    <li>ida2.png</li>
+                                    <li>khai1.png</li>
+                                    <li>khai2.png</li>
+                                </ul>
+                            </li>
                             <li>expand_arrow.png</li>
                             <li>favicon.png</li>
                             <li>LogoKoi.png</li>
+                            <li>massage_back</li>
+                            <li>massage_fullbody</li>
+                            <li>massage_lowerbody</li>
+                            <li>massage_neck</li>
+                            <li>massage_upperbody</li>
                             <li>tree_breeze_Moment.jpg</li>
                         </ul>
                     </li>
@@ -275,6 +311,11 @@
                         <tr>
                             <td>LogoKoi.png</td>
                             <td>Logo for the site</td>
+                            <td>Khai</td>
+                        </tr>
+                        <tr>
+                            <td>Koi.fig</td>
+                            <td>Figma prototype of the KOI website</td>
                             <td>Khai</td>
                         </tr>
                     </tbody>
